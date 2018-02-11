@@ -1,0 +1,26 @@
+postgresql: &postgresql
+  adapter: postgresql
+  username: waze
+  password: waze
+  host:     127.0.0.1
+  port:     5432
+  min_messages: ERROR
+  reconnect: false
+
+defaults: &defaults
+  pool: 5
+  timeout: 5000
+  encoding: utf8
+  <<: *postgresql
+
+development:
+  database: co_panel
+  <<: *defaults
+
+test: &test
+  database: co_panel
+  <<: *defaults
+
+production:
+  database: panel
+  <<: *defaults

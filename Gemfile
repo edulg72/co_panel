@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.5'
+gem 'rails', '4.2.7.1'
 
 # Support for databases and environment.
 # Use 'sqlite3' for testing and development and mysql and postgresql
